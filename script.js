@@ -1,4 +1,4 @@
-const slider = document.querySelector('.testimonial-slider');
+ const slider = document.querySelector('.testimonial-slider');
 const cards = document.querySelectorAll('.testimonial-card');
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');
