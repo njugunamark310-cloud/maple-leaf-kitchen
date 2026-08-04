@@ -1,4 +1,4 @@
- .testimonials {
+  .testimonials {
   text-align: center;
   padding: 2rem;
   background: #fdfdfd;
@@ -9,11 +9,11 @@
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: 100%;
-  overflow: hidden; /* hides overflow */
+  overflow: hidden; /* hides extra cards */
 }
 
 .testimonial-card {
-  flex: 0 0 100%; /* one card per slide */
+  flex: 0 0 100%; /* each card fills the slider */
   padding: 1.5rem;
   background: #fff;
   border-radius: 10px;
