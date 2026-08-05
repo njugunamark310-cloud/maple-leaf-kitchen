@@ -230,6 +230,7 @@ if (!emailPattern.test(email)) {
         };
 
         localStorage.setItem("contactData", JSON.stringify(contactData));
+        contactForm.reset();
     });
 }
 //data
