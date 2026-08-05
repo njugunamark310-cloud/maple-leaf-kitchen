@@ -1,4 +1,3 @@
-<<<<<<< HEAD
  
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -119,7 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-=======
 // Maple Leaf Kitchen
 // Menu page JavaScript
 const menuItems = document.querySelectorAll(".food-info");
@@ -319,4 +317,3 @@ if (savedMenuItems) {
     });
 
 }
->>>>>>> mark/javascript_page
