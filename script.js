@@ -44,3 +44,115 @@ menuForm.addEventListener("submit", function (event) {
     formMessage.textContent = `${foodName} has been added to the menu!`;
 
 });
+// Included a shopping cart section
+const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+const cartItems = document.getElementById("cartItems");
+
+const cartTotal = document.getElementById("cartTotal");
+
+let cart = [];
+addToCartButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+        const foodCard = button.closest(".food-info");
+
+        const foodName = foodCard.querySelector("h3").textContent;
+
+        const foodPrice = Number(
+            foodCard.querySelector(".price").textContent.replace("KSh ", "")
+        );
+
+        // Check if food is already in the cart
+        const existingFood = cart.find(function (food) {
+            return food.name === foodName;
+        });
+
+        if (existingFood) {
+            existingFood.quantity++;
+        } else {
+
+            const food = {
+                name: foodName,
+                price: foodPrice,
+                quantity: 1
+            };
+
+            cart.push(food);
+        }
+
+        updateCart();
+
+    });
+
+});
+function updateCart() {
+
+    cartItems.innerHTML = "";
+
+    let total = 0;
+
+    cart.forEach(function (food, index) {
+
+        const item = document.createElement("div");
+
+        item.classList.add("cart-item");
+
+        const itemTotal = food.price * food.quantity;
+
+        item.innerHTML = `
+            <h3>${food.name}</h3>
+            <p>KSh ${food.price} each</p>
+
+            <button class="decrease-btn" data-index="${index}">−</button>
+
+            <span> ${food.quantity} </span>
+
+            <button class="increase-btn" data-index="${index}">+</button>
+
+            <button class="remove-btn" data-index="${index}">
+                Remove
+            </button>
+
+            <p>Subtotal: KSh ${itemTotal}</p>
+        `;
+
+        cartItems.appendChild(item);
+
+        total += itemTotal;
+    });
+
+    cartTotal.textContent = total;
+
+}
+//Button functionality remove
+cartItems.addEventListener("click", function (event) {
+
+    const index = event.target.dataset.index;
+
+    if (event.target.classList.contains("increase-btn")) {
+
+        cart[index].quantity++;
+
+    }
+
+    if (event.target.classList.contains("decrease-btn")) {
+
+        cart[index].quantity--;
+
+        if (cart[index].quantity === 0) {
+            cart.splice(index, 1);
+        }
+
+    }
+
+    if (event.target.classList.contains("remove-btn")) {
+
+        cart.splice(index, 1);
+
+    }
+
+    updateCart();
+
+});
