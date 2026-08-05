@@ -16,34 +16,49 @@ menuItems.forEach(function (item) {
 // Interactive menu 
 const menuForm = document.getElementById("menuForm");
 
-menuForm.addEventListener("submit", function (event) {
+if (menuForm) {
 
-    event.preventDefault();
+    menuForm.addEventListener("submit", function (event) {
 
-    const foodName = document.getElementById("foodName").value;
-    const foodDescription = document.getElementById("foodDescription").value;
-    const foodPrice = document.getElementById("foodPrice").value;
+        event.preventDefault();
 
-    // Create a new food item
-    const newFood = document.createElement("div");
+        const name = document.getElementById("foodName").value;
+        const description = document.getElementById("foodDescription").value;
+        const price = document.getElementById("foodPrice").value;
+        const message = document.getElementById("formMessage");
 
-    newFood.classList.add("food-info");
+        if (name === "" || description === "" || price === "") {
+        message.textContent = "Please fill in all fields.";
+        return;
+}
 
-    newFood.innerHTML = `
-        <h3>${foodName}</h3>
-        <p>${foodDescription}</p>
-        <strong>KSh ${foodPrice}</strong>
-    `;
+        if (Number(price) <= 0) {
+        message.textContent = "Price must be greater than 0.";
+        return;
+}
 
-    // Add it to the dinner section
-    document.querySelector(".menu-section.dinner").appendChild(newFood);
+        const food = {
+            name: name,
+            description: description,
+            price: price
+        };
 
-    // Show success message
-    const formMessage = document.getElementById("formMessage");
+        // Get existing menu items
+        let foods = JSON.parse(localStorage.getItem("menuItems")) || [];
 
-    formMessage.textContent = `${foodName} has been added to the menu!`;
+        // Add new food
+        foods.push(food);
 
-});
+        // Save menu items
+        localStorage.setItem("menuItems", JSON.stringify(foods));
+
+        message.textContent = `${name} was added successfully!`;
+
+        menuForm.reset();
+    });
+
+}
+
 // Included a shopping cart section
 const addToCartButtons = document.querySelectorAll(".add-to-cart");
 
@@ -126,7 +141,7 @@ function updateCart() {
     cartTotal.textContent = total;
 
 }
-//Button functionality remove
+//Button functionality
 cartItems.addEventListener("click", function (event) {
 
     const index = event.target.dataset.index;
