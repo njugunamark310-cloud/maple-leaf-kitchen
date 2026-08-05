@@ -142,7 +142,8 @@ function updateCart() {
 
 }
 //Button functionality
-cartItems.addEventListener("click", function (event) {
+if (cartItems) {
+    cartItems.addEventListener("click", function (event) {
 
     const index = event.target.dataset.index;
 
@@ -170,7 +171,8 @@ cartItems.addEventListener("click", function (event) {
 
     updateCart();
 
-});
+    });
+}
 // Display saved menu items
 
 const savedMenuItems = document.getElementById("savedMenuItems");
@@ -196,4 +198,30 @@ if (savedMenuItems) {
 
     });
 
+}
+// contact page
+if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+        const formMessage = document.getElementById("formMessage");
+
+        if (name === "" || email === "" || message === "") {
+            formMessage.textContent = "Please fill in all required fields.";
+            return;
+        }
+
+        formMessage.textContent = "Form is valid!";
+
+        const contactData = {
+            name: name,
+            email: email,
+            message: message
+        };
+
+        localStorage.setItem("contactData", JSON.stringify(contactData));
+    });
 }
