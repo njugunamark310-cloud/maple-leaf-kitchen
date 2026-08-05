@@ -214,8 +214,14 @@ if (contactForm) {
             formMessage.textContent = "Please fill in all required fields.";
             return;
         }
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        formMessage.textContent = "Form is valid!";
+if (!emailPattern.test(email)) {
+    formMessage.textContent = "Please enter a valid email address.";
+    return;
+}
+
+        formMessage.textContent = "Message sent!";
 
         const contactData = {
             name: name,
@@ -225,4 +231,17 @@ if (contactForm) {
 
         localStorage.setItem("contactData", JSON.stringify(contactData));
     });
+}
+//data
+const savedContactMessage = document.getElementById("savedContactMessage");
+
+if (savedContactMessage) {
+    const savedData = localStorage.getItem("contactData");
+
+    if (savedData) {
+        const contactData = JSON.parse(savedData);
+
+        savedContactMessage.textContent =
+            `Name: ${contactData.name} | Email: ${contactData.email} | Message: ${contactData.message}`;
+    }
 }
