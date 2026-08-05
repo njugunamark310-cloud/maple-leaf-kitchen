@@ -48,16 +48,31 @@
             <p>Perfect meals to keep you energized throughout the day.</p>
         </div>
  <div class="food-info">
-                    <h3>Classic Burger</h3>
-                    <p>Juicy beef burger served with crispy fries.</p>
-                    <img src="https://tse4.mm.bing.net/th/id/OIP.XGNP6I6NoCQYLFs79ch30wHaIU?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="200" height="200" alt="Classic Burger">
+    <h3>Classic Burger</h3>
+    <p>Juicy beef burger served with crispy fries.</p>
 
- </div>
-    <div class="food-info 2">
-        <h3>Caesar Salad</h3>
-        <p>Crisp romaine lettuce with creamy Caesar dressing and croutons.</p>
-        <img src="https://tse4.mm.bing.net/th/id/OIP.xz8FlkKHyNwUyhesOs3QhgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="200" height="200" alt="Caesar Salad">
-    </div>
+    <img src="https://tse4.mm.bing.net/th/id/OIP.XGNP6I6NoCQYLFs79ch30wHaIU?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+         width="200"
+         height="200"
+         alt="Classic Burger">
+
+    <p class="price">KSh 550</p>
+
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+ <div class="food-info">
+    <h3>Caesar Salad</h3>
+    <p>Crisp romaine lettuce with creamy Caesar dressing and croutons.</p>
+
+    <img src="https://tse4.mm.bing.net/th/id/OIP.xz8FlkKHyNwUyhesOs3QhgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+         width="200"
+         height="200"
+         alt="Caesar Salad">
+
+    <p class="price">KSh 400</p>
+
+    <button class="add-to-cart">Add to Cart</button>
+</div>
     <!-- Dinner -->
     <section class="menu-section dinner">
 
@@ -71,6 +86,24 @@
             <p>Fresh salmon fillet grilled to perfection, served with seasonal vegetables.</p>
             <img src="https://tse4.mm.bing.net/th/id/OIP.7g0J8k1X5Z6F9Q2z5G9V1AHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="200" height="200" alt="Grilled Salmon">
         </div>
+        <section class="add-menu-item">
+    <h2>Add a Menu Item</h2>
+
+    <form id="menuForm">
+        <label for="foodName">Food Name:</label>
+        <input type="text" id="foodName" required>
+
+        <label for="foodDescription">Description:</label>
+        <input type="text" id="foodDescription" required>
+
+        <label for="foodPrice">Price:</label>
+        <input type="number" id="foodPrice" required>
+
+        <button type="submit">Add Menu Item</button>
+    </form>
+
+    <p id="formMessage"></p>
+</section>
 </main>
  <script src="script.js"></script>
 
