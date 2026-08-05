@@ -4,31 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maple Leaf Kitchen</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
+        <h1>Maple Leaf Kitchen</h1>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
+
 <main>
+<section id="home">
+    <h2>Welcome to Maple Leaf Kitchen</h2>
+    <p>-Experience the taste of excellence at our family-owned restaurant. <br> 
+        -Where we serve a variety of dishes made with fresh, locally sourced ingredients. <br>
+        -Our team is dedicated to providing an exceptional dining experience for every guest.</p>
+</section>
 
+<section>
+    <h2>View Menu</h2>
+    <a href="menu.html" class="menu button">Have a look at our dishes</a>
+</section>
 
+<section class="testimonials">
 
+    <div class="testimonial-heading">
+        <span>TESTIMONIALS</span>
+
+        <h2>What Our Guests Say</h2>
+
+        <p>
+            Don't just take our word for it —
+            hear what our guests have to say.
+        </p>
+    </div>
 
 
 
 </main>
- <script src="script.js"></script>
+ 
 
-     <footer>
+    <div class="testimonial-slider-container">
+
+        <button class="slider-btn prev-btn" aria-label="Previous testimonial">
+            &#10094;
+        </button>
+
+
+        <div class="testimonial-slider">
+
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+
+                <div class="quote-icon">“</div>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "The food at Maple Leaf Kitchen is absolutely amazing!
+                    The flavors are so fresh and the presentation is beautiful.
+                    Highly recommend!"
+                </p>
+
+                <div class="customer">
+                    <h3>Sarah M.</h3>
+                    <span>Happy Guest</span>
+                </div>
+
+            </div>
+
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+
+                <div class="quote-icon">“</div>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "I had a wonderful dining experience at Maple Leaf Kitchen.
+                    The staff was friendly and attentive, and the food was delicious.
+                    I will definitely be coming back!"
+                </p>
+
+                <div class="customer">
+                    <h3>John D.</h3>
+                    <span>Happy Guest</span>
+                </div>
+
+            </div>
+
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+
+                <div class="quote-icon">“</div>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Maple Leaf Kitchen is my go-to restaurant for special occasions.
+                    The ambiance is cozy and inviting, and the food is always top-notch.
+                    I can't wait to return!"
+                </p>
+
+                <div class="customer">
+                    <h3>Emily R.</h3>
+                    <span>Happy Guest</span>
+                </div>
+
+            </div>
+
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card">
+
+                <div class="quote-icon">“</div>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Every visit to Maple Leaf Kitchen is memorable.
+                    The service is excellent and the food never disappoints!"
+                </p>
+
+                <div class="customer">
+                    <h3>Michael K.</h3>
+                    <span>Happy Guest</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <button class="slider-btn next-btn" aria-label="Next testimonial">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <div class="slider-dots">
+
+        <button class="dot active" data-slide="0"></button>
+
+        <button class="dot" data-slide="1"></button>
+
+        <button class="dot" data-slide="2"></button>
+
+        <button class="dot" data-slide="3"></button>
+
+    </div>
+
+</section>
+
+</main>
+ 
+     <footer class="site-footer">
         <p>&copy; 2026 Maple Leaf Kitchen. All rights reserved.</p>
-    </footer>
+  </footer>
+   
+<script src="script.js"></script>
+
+
 </body>
 </html>
