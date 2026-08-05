@@ -1,11 +1,10 @@
-
-/* ========================================
+ /* ========================================
    TESTIMONIALS
 ======================================== */
 
 .testimonials {
     padding: 90px 8%;
-    background: #f8f6f0;
+    background: #fff8f0; /* harmonized background */
     text-align: center;
     overflow: hidden;
 }
@@ -16,20 +15,22 @@
 ======================================== */
 
 .testimonial-heading span {
-    color: #8b6b32;
+    color: #d4a574; /* accent color */
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 3px;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 .testimonial-heading h2 {
     margin: 10px 0;
     font-size: 42px;
-    color: #263b2b;
+    color: #7a2e2e; /* main heading color */
+    font-family: Georgia, serif;
 }
 
 .testimonial-heading p {
-    color: #666;
+    color: #3e2723; /* darker text */
     max-width: 600px;
     margin: 0 auto 45px;
 }
@@ -56,14 +57,10 @@
     flex: 0 0 100%;
     width: 100%;
     box-sizing: border-box;
-
     background: #ffffff;
-
     padding: 50px 45px;
-
     border-radius: 20px;
-
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 35px rgba(62, 39, 35, 0.2); /* softened shadow */
 }
 
 
@@ -74,9 +71,7 @@
 .quote-icon {
     font-size: 70px;
     line-height: 40px;
-
-    color: #8b6b32;
-
+    color: #d4a574; /* accent */
     font-family: Georgia, serif;
 }
 
@@ -86,12 +81,9 @@
 ======================================== */
 
 .stars {
-    color: #e0a52b;
-
+    color: #f2d9a1; /* harmonized gold tone */
     font-size: 25px;
-
     letter-spacing: 4px;
-
     margin: 15px 0 25px;
 }
 
@@ -102,14 +94,11 @@
 
 .testimonial-card > p {
     font-size: 18px;
-
     line-height: 1.8;
-
-    color: #555;
-
+    color: #3e2723; /* body text color */
     max-width: 750px;
-
     margin: 0 auto;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 
@@ -119,27 +108,21 @@
 
 .customer {
     margin-top: 30px;
-
     text-align: center;
 }
 
 .customer h3 {
     margin: 0 0 5px;
-
-    color: #263b2b;
-
+    color: #7a2e2e; /* heading color */
     font-size: 20px;
-
     font-weight: 700;
+    font-family: Georgia, serif;
 }
 
 .customer span {
-    color: #8b6b32;
-
+    color: #d4a574; /* accent */
     font-size: 14px;
-
     font-weight: 600;
-
     letter-spacing: 1px;
 }
 
@@ -150,34 +133,20 @@
 
 .slider-btn {
     position: absolute;
-
     top: 50%;
-
     transform: translateY(-50%);
-
     width: 50px;
     height: 50px;
-
     border: none;
-
     border-radius: 50%;
-
-    background: #263b2b;
-
-    color: #ffffff;
-
+    background: #7a2e2e; /* button base */
+    color: #fff8f0; /* text color */
     font-size: 24px;
-
     cursor: pointer;
-
     z-index: 10;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     transition: background 0.3s ease,
                 transform 0.3s ease;
 }
@@ -186,8 +155,7 @@
 /* Hover */
 
 .slider-btn:hover {
-    background: #8b6b32;
-
+    background: #d4a574; /* hover accent */
     transform: translateY(-50%) scale(1.1);
 }
 
@@ -212,26 +180,18 @@
 
 .slider-dots {
     display: flex;
-
     justify-content: center;
-
     gap: 10px;
-
     margin-top: 30px;
 }
 
 .dot {
     width: 11px;
     height: 11px;
-
     border: none;
-
     border-radius: 50%;
-
     background: #cccccc;
-
     cursor: pointer;
-
     transition: width 0.3s ease,
                 background 0.3s ease;
 }
@@ -241,10 +201,8 @@
 
 .dot.active {
     width: 30px;
-
     border-radius: 10px;
-
-    background: #8b6b32;
+    background: #7a2e2e; /* active color */
 }
 
 
@@ -273,7 +231,6 @@
     .slider-btn {
         width: 40px;
         height: 40px;
-
         font-size: 18px;
     }
 
@@ -286,4 +243,3 @@
     }
 
 }
-
