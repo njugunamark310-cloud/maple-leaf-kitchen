@@ -1,4 +1,4 @@
- 
+
 /* ========================================
    TESTIMONIALS
 ======================================== */
@@ -58,7 +58,8 @@
     box-sizing: border-box;
 
     background: #ffffff;
-    padding: 45px 35px;
+
+    padding: 50px 45px;
 
     border-radius: 20px;
 
@@ -67,13 +68,15 @@
 
 
 /* ========================================
-   QUOTE
+   QUOTE ICON
 ======================================== */
 
 .quote-icon {
     font-size: 70px;
     line-height: 40px;
+
     color: #8b6b32;
+
     font-family: Georgia, serif;
 }
 
@@ -84,9 +87,12 @@
 
 .stars {
     color: #e0a52b;
+
     font-size: 25px;
+
     letter-spacing: 4px;
-    margin: 15px 0 20px;
+
+    margin: 15px 0 25px;
 }
 
 
@@ -96,9 +102,13 @@
 
 .testimonial-card > p {
     font-size: 18px;
+
     line-height: 1.8;
+
     color: #555;
+
     max-width: 750px;
+
     margin: 0 auto;
 }
 
@@ -108,89 +118,88 @@
 ======================================== */
 
 .customer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
     margin-top: 30px;
+
+    text-align: center;
 }
-
-
-/* Rectangular customer image */
-
-.avatar {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 12px;
-    border: 3px solid #8b6b32;
-}
-
-
-/* Customer name */
 
 .customer h3 {
-    margin: 0;
+    margin: 0 0 5px;
+
     color: #263b2b;
-    font-size: 18px;
+
+    font-size: 20px;
+
+    font-weight: 700;
 }
 
-
-/* Customer description */
-
 .customer span {
-    color: #888;
+    color: #8b6b32;
+
     font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
 }
 
 
 /* ========================================
-   SLIDER BUTTONS
+   PREVIOUS / NEXT BUTTONS
 ======================================== */
 
 .slider-btn {
     position: absolute;
+
     top: 50%;
+
     transform: translateY(-50%);
 
     width: 50px;
     height: 50px;
 
     border: none;
+
     border-radius: 50%;
 
     background: #263b2b;
+
     color: #ffffff;
 
     font-size: 24px;
+
     cursor: pointer;
 
     z-index: 10;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
-    transition: background 0.3s ease, transform 0.3s ease;
+    transition: background 0.3s ease,
+                transform 0.3s ease;
 }
 
 
-/* Button hover */
+/* Hover */
 
 .slider-btn:hover {
     background: #8b6b32;
+
     transform: translateY(-50%) scale(1.1);
 }
 
 
-/* Previous button */
+/* Previous */
 
 .prev-btn {
     left: 15px;
 }
 
 
-/* Next button */
+/* Next */
 
 .next-btn {
     right: 15px;
@@ -203,8 +212,11 @@
 
 .slider-dots {
     display: flex;
+
     justify-content: center;
+
     gap: 10px;
+
     margin-top: 30px;
 }
 
@@ -213,13 +225,15 @@
     height: 11px;
 
     border: none;
+
     border-radius: 50%;
 
     background: #cccccc;
 
     cursor: pointer;
 
-    transition: width 0.3s ease, background 0.3s ease;
+    transition: width 0.3s ease,
+                background 0.3s ease;
 }
 
 
@@ -227,7 +241,9 @@
 
 .dot.active {
     width: 30px;
+
     border-radius: 10px;
+
     background: #8b6b32;
 }
 
@@ -247,7 +263,7 @@
     }
 
     .testimonial-card {
-        padding: 35px 25px;
+        padding: 40px 25px;
     }
 
     .testimonial-card > p {
@@ -257,6 +273,7 @@
     .slider-btn {
         width: 40px;
         height: 40px;
+
         font-size: 18px;
     }
 
@@ -268,8 +285,5 @@
         right: 5px;
     }
 
-    .avatar {
-        width: 70px;
-        height: 70px;
-    }
 }
+

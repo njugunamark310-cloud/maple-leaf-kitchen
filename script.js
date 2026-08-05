@@ -1,4 +1,4 @@
- ```javascript
+ 
 document.addEventListener("DOMContentLoaded", function () {
 
     const slider = document.querySelector(".testimonial-slider");
@@ -132,4 +132,4 @@ document.addEventListener("DOMContentLoaded", function () {
     showSlide(0);
 
 });
-```
+
