@@ -110,21 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /*
     ========================================
-    AUTOMATIC SLIDER
-    ========================================
-
-    Changes testimonial every 5 seconds.
-    */
-
-    setInterval(function () {
-
-        showSlide(currentSlide + 1);
-
-    }, 5000);
-
-
-    /*
-    ========================================
     START SLIDER
     ========================================
     */
