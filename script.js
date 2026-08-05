@@ -171,3 +171,29 @@ cartItems.addEventListener("click", function (event) {
     updateCart();
 
 });
+// Display saved menu items
+
+const savedMenuItems = document.getElementById("savedMenuItems");
+
+if (savedMenuItems) {
+
+    const foods = JSON.parse(localStorage.getItem("menuItems")) || [];
+
+    foods.forEach(function (food) {
+
+        const newFood = document.createElement("div");
+
+        newFood.classList.add("food-info");
+
+        newFood.innerHTML = `
+            <h3>${food.name}</h3>
+            <p>${food.description}</p>
+            <p class="price">KSh ${food.price}</p>
+            <button class="add-to-cart">Add to Cart</button>
+        `;
+
+        savedMenuItems.appendChild(newFood);
+
+    });
+
+}
