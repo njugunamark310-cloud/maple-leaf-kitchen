@@ -361,10 +361,14 @@
     }
 
 }
+
+/*=======================================
+   CONTACT PAGE
+======================================== */
 #contact {
   padding: 60px 40px;
-  background-color: #222;
-  color: #fff;
+  background-color: #222;   /* cream background to match testimonials */
+  color: #fff;              /* dark brown text */
 }
 #contact h2 {
   font-size: 32px;
@@ -374,13 +378,47 @@
 #contact > p {
   text-align: center;
   margin-bottom: 30px;
-  color: #bbb;
+  color: #bbb;              /* maroon text for emphasis */
   font-size: 15px;
 }
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
 }
+
+/* Contact form feedback message */
+#formMessage {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #7a2e2e;              /* maroon text for emphasis */
+  text-align: center;
+}
+
+/* Saved contact section */
+#saved-contact {
+  background-color: #fff8f0;   /* cream background to match testimonials */
+  border: 1px solid #d4a574;   /* gold accent border */
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #3e2723;              /* dark brown text */
+}
+
+#saved-contact h2 {
+  color: #7a2e2e;              /* maroon heading */
+  font-family: Georgia, serif;
+  margin-bottom: 10px;
+}
+
+#savedContactMessage {
+  font-size: 15px;
+  color: #3e2723;              /* dark brown for readability */
+  margin: 0;
+}
+
 
 .form-group {
   margin-bottom: 20px;
@@ -645,11 +683,70 @@ food-info img{
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
-.footer{
-    background:#7a2e2e;
-    color:#fff8f0;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
+ .site-footer {
+  background-color: #7a2e2e;   /* maroon base */
+  color: #fff8f0;              /* cream text */
+  text-align: center;
+  padding: 20px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
 }
 
+.site-footer hr {
+  border: none;
+  border-top: 1px solid #d4a574; /* gold accent line */
+  margin-bottom: 10px;
+}
+
+.site-footer p {
+  margin: 0;
+  color: #fff8f0;              /* keep text cream for readability */
+}
+
+/*=======================================
+   ABOUT PAGE
+======================================== */
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  color: #7a2e2e;
+  border-bottom: 2px solid #d4a574;
+  padding-bottom: 8px;
+}
+
+/* Team photos */
+.team-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.team-photos figure {
+  margin: 0;
+  text-align: center;
+  width: 150px;
+}
+
+.team-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #d4a574;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #7a2e2e;
+}
