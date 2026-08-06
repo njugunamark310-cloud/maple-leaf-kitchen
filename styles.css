@@ -46,3 +46,19 @@ food-info img{
     font-size:22px;
     font-weight:bold;
 }
+.cart-section{
+    background:white;
+    border:2px solid #d4a574;
+    border-radius:16px;
+    padding:25px;
+    margin-top:40px;
+}
+
+.cart-section h2{
+    color:#7a2e2e;
+}
+
+.cart-item{
+    border-bottom:1px solid #d4a574;
+    padding:15px 0;
+}
