@@ -1,3 +1,72 @@
+/*=======================================
+   HOME PAGE
+======================================== */
+
+/* Home intro */
+#home p {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #3e2723;
+}
+
+/* Menu button */
+ .menu.button {
+  display: inline-block;
+  background-color: #263b2b;   /* same as slider base */
+  color: #ffffff;              /* white text */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.menu.button:hover {
+  background-color: #8b6b32;   /* gold-brown hover */
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+
+/* Reservation section */
+.reservation-section {
+  background-color: #f2d9a1;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.reservation-section h2 {
+  color: #7a2e2e;
+  margin-bottom: 15px;
+}
+
+.reservation-section p {
+  margin-bottom: 20px;
+  color: #3e2723;
+}
+
+ .reservation-btn {
+  display: inline-block;
+  background-color: #263b2b;   /* same as slider base */
+  color: #ffffff;              /* white text */
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.reservation-btn:hover {
+  background-color: #8b6b32;   /* gold-brown hover */
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
 
 
 /* ========================================
@@ -292,23 +361,169 @@
     }
 
 }
+#contact {
+  padding: 60px 40px;
+  background-color: #222;
+  color: #fff;
+}
+#contact h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#contact > p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #bbb;
+  font-size: 15px;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #ddd;
+}.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #555;
+  border-radius: 6px;
+  background-color: #333;
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Georgia', serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4d3825;
+  outline: none;
+  background-color: #3a3a3a;
+}button[type='submit'] {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background-color: #59422e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button[type='submit']:hover {
+  background-color: #53463c;
+}
 
 
 
 /*MAPLE LEAF KITCHEN MENU DESIGN*/
 /* Food Cards */
 .food-info {
-    background: linear-gradient(145deg, #fffdf8, #f7f1e8);
-    border: 2px solid #e8d5b7;
-    border-radius: 18px;
+    background: #fff;
+    border: 2px solid #d4a574;
+    border-radius: 16px;
     padding: 20px;
-    margin: 25px auto;
-    max-width: 320px;
+    margin: 40px auto;
     text-align: center;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     transition: all 0.3s ease;
 }
+
 .food-info:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+/*food changes*/
+food-info img{
+    width:100%;
+    height:520px;
+    object-fit:cover;
+    border-radius:12px;
+    border:3px solid #d4a574;
+}
+.food-info h3{
+    color:#7a2e2e;
+    margin-top:15px;
+}
+/* buttons */
+.add-to-cart{
+    background:#7a2e2e;
+    color:#fff8f0;
+    border:none;
+    padding:12px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+/* cart section */
+.add-to-cart:hover{
+    background:#3e2723;
+}
+.price{
+    color:#7a2e2e;
+    font-size:22px;
+    font-weight:bold;
+}
+.cart-section{
+    background:white;
+    border:2px solid #d4a574;
+    border-radius:16px;
+    padding:25px;
+    margin-top:40px;
+}
+
+.cart-section h2{
+    color:#7a2e2e;
+}
+
+.cart-item{
+    border-bottom:1px solid #d4a574;
+    padding:15px 0;
+/* Menu form */
+}
+.add-menu-item{
+    background:white;
+    border:2px solid #d4a574;
+    border-radius:16px;
+    padding:25px;
+    margin-top:40px;
+}
+
+.add-menu-item h2{
+    color:#7a2e2e;
+}
+
+.add-menu-item input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #d4a574;
+    border-radius:8px;
+}
+
+.add-menu-item button{
+    background:#7a2e2e;
+    color:#fff8f0;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.add-menu-item button:hover{
+    background:#3e2723;
     transform: translateY(-8px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
