@@ -10,21 +10,25 @@
 }
 
 /* Menu button */
-.menu.button {
+ .menu.button {
   display: inline-block;
-  background-color: #d4a574;
-  color: #3e2723;
+  background-color: #263b2b;   /* same as slider base */
+  color: #ffffff;              /* white text */
   padding: 12px 24px;
+  border: none;
   border-radius: 6px;
   font-weight: bold;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .menu.button:hover {
-  background-color: #7a2e2e;
-  color: #fff8f0;
+  background-color: #8b6b32;   /* gold-brown hover */
+  color: #ffffff;
+  transform: scale(1.05);
 }
+
 
 /* Reservation section */
 .reservation-section {
@@ -44,21 +48,25 @@
   color: #3e2723;
 }
 
-.reservation-btn {
+ .reservation-btn {
   display: inline-block;
-  background-color: #7a2e2e;
-  color: #fff8f0;
+  background-color: #263b2b;   /* same as slider base */
+  color: #ffffff;              /* white text */
   padding: 12px 28px;
+  border: none;
   border-radius: 6px;
   font-weight: bold;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .reservation-btn:hover {
-  background-color: #3e2723;
-  color: #f2d9a1;
+  background-color: #8b6b32;   /* gold-brown hover */
+  color: #ffffff;
+  transform: scale(1.05);
 }
+
 
 /* ========================================
    TESTIMONIALS
