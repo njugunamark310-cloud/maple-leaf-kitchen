@@ -430,6 +430,123 @@ button[type='submit']:hover {
 
 /*MAPLE LEAF KITCHEN MENU DESIGN*/
 /* Food Cards */
+/* Header */
+header{
+    background:#7a2e2e;
+    color:#fff8f0;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+    font-family:Georgia, serif;
+}
+
+header h1{
+    margin:0;
+    font-size:2.5rem;
+    font-family:Georgia, serif;
+    color:#fff8f0;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    list-style:none;
+    padding:15px 0 0;
+    margin:0;
+}
+
+nav a{
+    color:#f2d9a1;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:white;
+}
+/* Header */
+
+header{
+    background:#7a2e2e;
+    color:#fff8f0;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+
+header h1{
+    margin:0;
+    font-size:2.5rem;
+    font-family:Georgia, serif;
+    color:#fff8f0;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    list-style:none;
+    padding:15px 0 0;
+    margin:0;
+}
+
+nav a{
+    color:#f2d9a1;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:white;
+}
+.section-heading{
+    text-align:center;
+}
+
+.section-heading img{
+    margin-top:15px;
+}
+/* Breakfast and Dinner section images */
+
+.menu-section > .contain > img,
+.section-heading img {
+
+    display: block;
+    margin: 20px auto;
+
+    width: 1900px;
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+    border: 4px solid #d4a574;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+
+    transition: .3s ease;
+}
+
+.menu-section > .contain > img:hover,
+.section-heading img:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+.section-heading img{
+    width:100%;
+    max-width:2000px;
+    height:260px;
+    object-fit:cover;
+    border-radius:20px;
+    border:4px solid #d4a574;
+}
+
 .food-info {
     background: #fff;
     border: 2px solid #d4a574;
@@ -528,3 +645,10 @@ food-info img{
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
+.footer{
+    background:#7a2e2e;
+    color:#fff8f0;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
