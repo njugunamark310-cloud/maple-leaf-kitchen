@@ -636,5 +636,10 @@ food-info img{
 .add-menu-item button:hover{
     background:#3e2723;
 }
-
-
+.footer{
+    background:#7a2e2e;
+    color:#fff8f0;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
