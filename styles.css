@@ -37,7 +37,12 @@ food-info img{
     cursor:pointer;
     transition:.3s;
 }
-
+/* cart section */
 .add-to-cart:hover{
     background:#3e2723;
+}
+.price{
+    color:#7a2e2e;
+    font-size:22px;
+    font-weight:bold;
 }
