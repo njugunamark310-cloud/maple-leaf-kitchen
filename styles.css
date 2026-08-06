@@ -1,4 +1,667 @@
  /* Reset & base */
+/*=======================================
+   HOME PAGE
+======================================== */
+
+/* Home intro */
+#home p {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #3e2723;
+}
+
+/* Menu button */
+ .menu.button {
+  display: inline-block;
+  background-color: #7a2e2e;   /* same as slider base */
+  color: #ffffff;              /* white text */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.menu.button:hover {
+  background-color: #d4a574;   /* gold-brown hover */
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+
+/* Reservation section */
+.reservation-section {
+  background-color: #fff8f0;   /* same as slider base */
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.reservation-section h2 {
+  color: #7a2e2e;
+  margin-bottom: 15px;
+}
+
+.reservation-section p {
+  margin-bottom: 20px;
+  color: #3e2723;
+}
+
+ .reservation-btn {
+  display: inline-block;
+  background-color: #7a2e2e;   /* same as slider base */
+  color: #ffffff;              /* white text */
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.reservation-btn:hover {
+  background-color: #d4a574;   /* gold-brown hover */
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+
+
+/* ========================================
+   TESTIMONIALS
+======================================== */
+
+.testimonials {
+    padding: 90px 8%;
+    background: #fff8f0;
+    text-align: center;
+    overflow: hidden;
+    color: #3e2723;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+
+/* ========================================
+   HEADING
+======================================== */
+
+.testimonial-heading span {
+    color: #d4a574;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.testimonial-heading h2 {
+    margin: 10px 0;
+    font-size: 42px;
+    color: #7a2e2e;
+    font-family: Georgia, serif;
+}
+
+.testimonial-heading p {
+    color: #3e2723;
+    max-width: 600px;
+    margin: 0 auto 45px;
+}
+
+
+/* ========================================
+   SLIDER
+======================================== */
+
+.testimonial-slider-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonial-slider {
+    display: flex;
+    width: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.testimonial-card {
+    flex: 0 0 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    padding: 50px 45px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 35px rgba(62, 39, 35, 0.12);
+}
+
+
+/* ========================================
+   QUOTE ICON
+======================================== */
+
+.quote-icon {
+    font-size: 70px;
+    line-height: 40px;
+
+    color: #d4a574;
+
+    font-family: Georgia, serif;
+}
+
+
+/* ========================================
+   STAR RATING
+======================================== */
+
+.stars {
+    color: #d4a574;
+
+    font-size: 25px;
+
+    letter-spacing: 4px;
+
+    margin: 15px 0 25px;
+}
+
+
+/* ========================================
+   TESTIMONIAL TEXT
+======================================== */
+
+.testimonial-card > p {
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #3e2723;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   CUSTOMER
+======================================== */
+
+.customer {
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+.customer h3 {
+    margin: 0 0 5px;
+
+    color: #7a2e2e;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    font-family: Georgia, serif;
+}
+
+.customer span {
+    color: #d4a574;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+
+/* ========================================
+   PREVIOUS / NEXT BUTTONS
+======================================== */
+
+.slider-btn {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #7a2e2e;
+
+    color: #fff8f0;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: background 0.3s ease,
+                transform 0.3s ease;
+}
+
+
+/* Hover */
+
+.slider-btn:hover {
+    background: #d4a574;
+
+    transform: translateY(-50%) scale(1.1);
+}
+
+
+/* Previous */
+
+.prev-btn {
+    left: 15px;
+}
+
+
+/* Next */
+
+.next-btn {
+    right: 15px;
+}
+
+
+/* ========================================
+   SLIDER DOTS
+======================================== */
+
+.slider-dots {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+.dot {
+    width: 11px;
+    height: 11px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #d4a574;
+
+    cursor: pointer;
+
+    transition: width 0.3s ease,
+                background 0.3s ease;
+}
+
+
+/* Active dot */
+
+.dot.active {
+    width: 30px;
+
+    border-radius: 10px;
+
+    background: #7a2e2e;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+    .testimonials {
+        padding: 70px 5%;
+    }
+
+    .testimonial-heading h2 {
+        font-size: 32px;
+    }
+
+    .testimonial-card {
+        padding: 40px 25px;
+    }
+
+    .testimonial-card > p {
+        font-size: 16px;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+
+        font-size: 18px;
+    }
+
+    .prev-btn {
+        left: 5px;
+    }
+
+    .next-btn {
+        right: 5px;
+    }
+
+}
+#contact {
+  padding: 60px 40px;
+  background-color: #222;
+  color: #fff;
+}
+#contact h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#contact > p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #bbb;
+  font-size: 15px;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #ddd;
+}.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #555;
+  border-radius: 6px;
+  background-color: #333;
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Georgia', serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4d3825;
+  outline: none;
+  background-color: #3a3a3a;
+}button[type='submit'] {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background-color: #59422e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button[type='submit']:hover {
+  background-color: #53463c;
+}
+
+
+
+/*MAPLE LEAF KITCHEN MENU DESIGN*/
+/* Food Cards */
+/* Header */
+header{
+    background:#7a2e2e;
+    color:#fff8f0;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+    font-family:Georgia, serif;
+}
+
+header h1{
+    margin:0;
+    font-size:2.5rem;
+    font-family:Georgia, serif;
+    color:#fff8f0;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    list-style:none;
+    padding:15px 0 0;
+    margin:0;
+}
+
+nav a{
+    color:#f2d9a1;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:white;
+}
+/* Header */
+
+header{
+    background:#7a2e2e;
+    color:#fff8f0;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+
+header h1{
+    margin:0;
+    font-size:2.5rem;
+    font-family:Georgia, serif;
+    color:#fff8f0;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    list-style:none;
+    padding:15px 0 0;
+    margin:0;
+}
+
+nav a{
+    color:#f2d9a1;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:white;
+}
+.section-heading{
+    text-align:center;
+}
+
+.section-heading img{
+    margin-top:15px;
+}
+/* Breakfast and Dinner section images */
+
+.menu-section > .contain > img,
+.section-heading img {
+
+    display: block;
+    margin: 20px auto;
+
+    width: 900px;
+    height: 240px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+    border: 4px solid #d4a574;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+
+    transition: .3s ease;
+}
+
+.menu-section > .contain > img:hover,
+.section-heading img:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+.section-heading img{
+    width:100%;
+    max-width:2000px;
+    height:260px;
+    object-fit:cover;
+    border-radius:20px;
+    border:4px solid #d4a574;
+}
+
+.food-info {
+    background: #fff;
+    border: 2px solid #d4a574;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+}
+
+.food-info:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+/*food changes*/
+food-info img{
+    width:100%;
+    height:520px;
+    object-fit:cover;
+    border-radius:12px;
+    border:3px solid #d4a574;
+}
+.food-info h3{
+    color:#7a2e2e;
+    margin-top:15px;
+}
+/* buttons */
+.add-to-cart{
+    background:#7a2e2e;
+    color:#fff8f0;
+    border:none;
+    padding:12px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+/* cart section */
+.add-to-cart:hover{
+    background:#3e2723;
+}
+.price{
+    color:#7a2e2e;
+    font-size:22px;
+    font-weight:bold;
+}
+.cart-section{
+    background:white;
+    border:2px solid #d4a574;
+    border-radius:16px;
+    padding:25px;
+    margin-top:40px;
+}
+
+.cart-section h2{
+    color:#7a2e2e;
+}
+
+.cart-item{
+    border-bottom:1px solid #d4a574;
+    padding:15px 0;
+/* Menu form */
+}
+.add-menu-item{
+    background:white;
+    border:2px solid #d4a574;
+    border-radius:16px;
+    padding:25px;
+    margin-top:40px;
+}
+
+.add-menu-item h2{
+    color:#7a2e2e;
+}
+
+.add-menu-item input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #d4a574;
+    border-radius:8px;
+}
+
+.add-menu-item button{
+    background:#7a2e2e;
+    color:#fff8f0;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.add-menu-item button:hover{
+    background:#3e2723;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.footer{
+    background:#7a2e2e;
+    color:#fff8f0;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+
+
+
+
+
+
+
+/* Reset & base */
 * {
   box-sizing: border-box;
 }
