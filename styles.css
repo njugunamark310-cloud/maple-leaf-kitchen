@@ -589,10 +589,15 @@ food-info img{
 .add-to-cart:hover{
     background:#3e2723;
 }
-.price{
-    color:#7a2e2e;
-    font-size:22px;
-    font-weight:bold;
+ .price {
+    display: inline-block;
+    color: #7a2e2e;
+    font-size: 22px;
+    font-weight: bold;
+    background: #fdf0e6;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 2px solid #d4a574;
 }
 .cart-section{
     background:white;
