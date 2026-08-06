@@ -61,4 +61,37 @@ food-info img{
 .cart-item{
     border-bottom:1px solid #d4a574;
     padding:15px 0;
+/* Menu form */
+}
+.add-menu-item{
+    background:white;
+    border:2px solid #d4a574;
+    border-radius:16px;
+    padding:25px;
+    margin-top:40px;
+}
+
+.add-menu-item h2{
+    color:#7a2e2e;
+}
+
+.add-menu-item input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #d4a574;
+    border-radius:8px;
+}
+
+.add-menu-item button{
+    background:#7a2e2e;
+    color:#fff8f0;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.add-menu-item button:hover{
+    background:#3e2723;
 }
