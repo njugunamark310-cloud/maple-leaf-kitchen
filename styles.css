@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-#contact {
-  padding: 60px 40px;
-  background-color: #222;
-  color: #fff;
-}
-#contact h2 {
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-#contact > p {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #bbb;
-  font-size: 15px;
-}
-=======
 
 /* ========================================
    TESTIMONIALS
@@ -305,5 +286,9 @@
     }
 
 }
+#contact {
+  padding: 60px 40px;
+  background-color: #222;
+  color: #fff;
+}
 
->>>>>>> 4250530251c5ae1747c28e5be29910b653052914
