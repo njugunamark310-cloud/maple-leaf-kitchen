@@ -187,37 +187,38 @@ const cartItems = document.getElementById("cartItems");
 const cartTotal = document.getElementById("cartTotal");
 
 let cart = [];
+// Corrected Re usable cart function
+function addFoodToCart(button) {
+
+    const foodCard = button.closest(".food-info");
+
+    const foodName = foodCard.querySelector("h3").textContent;
+
+    const foodPrice = Number(
+        foodCard.querySelector(".price").textContent.replace("KSh ", "")
+    );
+
+    const existingFood = cart.find(function (food) {
+        return food.name === foodName;
+    });
+
+    if (existingFood) {
+        existingFood.quantity++;
+    } else {
+        cart.push({
+            name: foodName,
+            price: foodPrice,
+            quantity: 1
+        });
+    }
+
+    updateCart();
+}
 addToCartButtons.forEach(function (button) {
 
     button.addEventListener("click", function () {
 
-        const foodCard = button.closest(".food-info");
-
-        const foodName = foodCard.querySelector("h3").textContent;
-
-        const foodPrice = Number(
-            foodCard.querySelector(".price").textContent.replace("KSh ", "")
-        );
-
-        // Check if food is already in the cart
-        const existingFood = cart.find(function (food) {
-            return food.name === foodName;
-        });
-
-        if (existingFood) {
-            existingFood.quantity++;
-        } else {
-
-            const food = {
-                name: foodName,
-                price: foodPrice,
-                quantity: 1
-            };
-
-            cart.push(food);
-        }
-
-        updateCart();
+        addFoodToCart(button);
 
     });
 
@@ -262,7 +263,8 @@ function updateCart() {
 
 }
 //Button functionality
-cartItems.addEventListener("click", function (event) {
+if (cartItems) {
+    cartItems.addEventListener("click", function (event) {
 
     const index = event.target.dataset.index;
 
@@ -290,7 +292,8 @@ cartItems.addEventListener("click", function (event) {
 
     updateCart();
 
-});
+    });
+}
 // Display saved menu items
 
 const savedMenuItems = document.getElementById("savedMenuItems");
@@ -311,9 +314,63 @@ if (savedMenuItems) {
             <p class="price">KSh ${food.price}</p>
             <button class="add-to-cart">Add to Cart</button>
         `;
-
+// updated code on new added items for Cart 
         savedMenuItems.appendChild(newFood);
+
+const newButton = newFood.querySelector(".add-to-cart");
+
+newButton.addEventListener("click", function () {
+    addFoodToCart(newButton);
+});
 
     });
 
+}
+
+// contact page
+const contactForm = document.querySelector(".contact-form");
+if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+        const formMessage = document.getElementById("formMessage");
+
+        if (name === "" || email === "" || message === "") {
+            formMessage.textContent = "Please fill in all required fields.";
+            return;
+        }
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (!emailPattern.test(email)) {
+    formMessage.textContent = "Please enter a valid email address.";
+    return;
+}
+
+        formMessage.textContent = "Message sent!";
+
+        const contactData = {
+            name: name,
+            email: email,
+            message: message
+        };
+
+        localStorage.setItem("contactData", JSON.stringify(contactData));
+        contactForm.reset();
+    });
+}
+//data
+const savedContactMessage = document.getElementById("savedContactMessage");
+
+if (savedContactMessage) {
+    const savedData = localStorage.getItem("contactData");
+
+    if (savedData) {
+        const contactData = JSON.parse(savedData);
+
+        savedContactMessage.textContent =
+            `Name: ${contactData.name} | Email: ${contactData.email} | Message: ${contactData.message}`;
+    }
 }
