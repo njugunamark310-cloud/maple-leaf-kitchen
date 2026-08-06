@@ -19,10 +19,123 @@
     </nav>
 </header>
 <main>
+     <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Maple Leaf Kitchen</h1>
+                 <p>
+                Where every meal is prepared with love, fresh ingredients,
+                and unforgettable flavors. Join us for a dining experience
+                that feels just like home.
+                 </p>
+        </div>
+    </section>
+    <!-- breakfast section -->
+     <section class="menu-section">
+        <div class="contain">
+            <h2>Breakfast</h2>
+            <img src="https://tse3.mm.bing.net/th/id/OIP.1kZZIT_9stI_jKJmKqhA-QHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="200" height="200" alt="Breakfast">
+            <p>Start your day with our delicious breakfast options, made fresh daily.</p>
+            <div class="food-info">
+    <h3>Pancakes</h3>
+    <p>Fluffy pancakes served fresh with delicious toppings.</p>
+    <img
+        src="https://tse4.mm.bing.net/th/id/OIP.ru0xAhU2XwhaX7T11RLNdAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+        width="200"
+        height="200"
+        alt="Pancakes"
+    >
 
-  
+    <p class="price">KSh 350</p>
 
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+        </div>
+         <!-- Lunch -->
+    <section class="menu-section lunch">
+        <div class="section-heading">
+            <h2>Lunch</h2>
+            <p>Perfect meals to keep you energized throughout the day.</p>
+        </div>
+ <div class="food-info">
+    <h3>Classic Burger</h3>
+    <p>Juicy beef burger served with crispy fries.</p>
 
+    <img src="https://tse4.mm.bing.net/th/id/OIP.XGNP6I6NoCQYLFs79ch30wHaIU?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+         width="200"
+         height="200"
+         alt="Classic Burger">
+
+    <p class="price">KSh 550</p>
+
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+ <div class="food-info">
+    <h3>Caesar Salad</h3>
+    <p>Crisp romaine lettuce with creamy Caesar dressing and croutons.</p>
+
+    <img src="https://tse4.mm.bing.net/th/id/OIP.xz8FlkKHyNwUyhesOs3QhgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+         width="200"
+         height="200"
+         alt="Caesar Salad">
+
+    <p class="price">KSh 400</p>
+
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+    <!-- Dinner -->
+    <section class="menu-section dinner">
+
+        <div class="section-heading">
+            <h2>Dinner</h2>
+            <p>End your day with our chef's signature dishes.</p>
+            <img src="https://nebraskastarbeef.com/wp-content/uploads/2022/09/52913995_m-scaled.jpg" width="200" height="200" alt="Grilled Steak">
+        </div>
+    <!-- Existing food items here -->
+
+    <div id="savedMenuItems"></div>
+        <div class="food-info">
+    <h3>Grilled Salmon</h3>
+    <p>Fresh salmon fillet grilled to perfection, served with seasonal vegetables.</p>
+
+    <img
+        src=https://images.services.kitchenstories.io/iVj59av0wHJY3TWq3Ym32RuJvyg=/3840x0/filters:quality(85)/images.kitchenstories.io/wagtailOriginalImages/R3022-final-photo-3.jpg
+        width="200"
+        height="200"
+        alt="Grilled Salmon"
+    >
+
+    <p class="price">KSh 850</p>
+
+    <button class="add-to-cart">Add to Cart</button>
+</div>
+        <section class="add-menu-item">
+    <h2>Add a Menu Item</h2>
+
+    <form id="menuForm">
+        <label for="foodName">Food Name:</label>
+        <input type="text" id="foodName" required>
+
+        <label for="foodDescription">Description:</label>
+        <input type="text" id="foodDescription" required>
+
+        <label for="foodPrice">Price:</label>
+        <input type="number" id="foodPrice" required>
+
+        <button type="submit">Add Menu Item</button>
+    </form>
+    <section class="cart-section">
+    <h2>🛒 Your Order</h2>
+
+    <div id="cartItems">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <h3>Total: KSh <span id="cartTotal">0</span></h3>
+</section>
+
+    <p id="formMessage"></p>
+</section>
 </main>
  <script src="script.js"></script>
 
