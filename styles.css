@@ -1,3 +1,427 @@
+/*=======================================
+   HOME PAGE
+======================================== */
+
+/* Home intro */
+#home p {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #3e2723;
+}
+
+/* Menu button */
+ .menu.button {
+  display: inline-block;
+  background-color: #263b2b;   /* same as slider base */
+  color: #ffffff;              /* white text */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.menu.button:hover {
+  background-color: #8b6b32;   /* gold-brown hover */
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+
+/* Reservation section */
+.reservation-section {
+  background-color: #f2d9a1;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.reservation-section h2 {
+  color: #7a2e2e;
+  margin-bottom: 15px;
+}
+
+.reservation-section p {
+  margin-bottom: 20px;
+  color: #3e2723;
+}
+
+ .reservation-btn {
+  display: inline-block;
+  background-color: #263b2b;   /* same as slider base */
+  color: #ffffff;              /* white text */
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.reservation-btn:hover {
+  background-color: #8b6b32;   /* gold-brown hover */
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+
+
+/* ========================================
+   TESTIMONIALS
+======================================== */
+
+.testimonials {
+    padding: 90px 8%;
+    background: #f8f6f0;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+/* ========================================
+   HEADING
+======================================== */
+
+.testimonial-heading span {
+    color: #8b6b32;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.testimonial-heading h2 {
+    margin: 10px 0;
+    font-size: 42px;
+    color: #263b2b;
+}
+
+.testimonial-heading p {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 45px;
+}
+
+
+/* ========================================
+   SLIDER
+======================================== */
+
+.testimonial-slider-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonial-slider {
+    display: flex;
+    width: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.testimonial-card {
+    flex: 0 0 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    padding: 50px 45px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ========================================
+   QUOTE ICON
+======================================== */
+
+.quote-icon {
+    font-size: 70px;
+    line-height: 40px;
+
+    color: #8b6b32;
+
+    font-family: Georgia, serif;
+}
+
+
+/* ========================================
+   STAR RATING
+======================================== */
+
+.stars {
+    color: #e0a52b;
+
+    font-size: 25px;
+
+    letter-spacing: 4px;
+
+    margin: 15px 0 25px;
+}
+
+
+/* ========================================
+   TESTIMONIAL TEXT
+======================================== */
+
+.testimonial-card > p {
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #555;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   CUSTOMER
+======================================== */
+
+.customer {
+    margin-top: 30px;
+
+    text-align: center;
+}
+
+.customer h3 {
+    margin: 0 0 5px;
+
+    color: #263b2b;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+.customer span {
+    color: #8b6b32;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+
+/* ========================================
+   PREVIOUS / NEXT BUTTONS
+======================================== */
+
+.slider-btn {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #263b2b;
+
+    color: #ffffff;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: background 0.3s ease,
+                transform 0.3s ease;
+}
+
+
+/* Hover */
+
+.slider-btn:hover {
+    background: #8b6b32;
+
+    transform: translateY(-50%) scale(1.1);
+}
+
+
+/* Previous */
+
+.prev-btn {
+    left: 15px;
+}
+
+
+/* Next */
+
+.next-btn {
+    right: 15px;
+}
+
+
+/* ========================================
+   SLIDER DOTS
+======================================== */
+
+.slider-dots {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+.dot {
+    width: 11px;
+    height: 11px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #cccccc;
+
+    cursor: pointer;
+
+    transition: width 0.3s ease,
+                background 0.3s ease;
+}
+
+
+/* Active dot */
+
+.dot.active {
+    width: 30px;
+
+    border-radius: 10px;
+
+    background: #8b6b34;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+    .testimonials {
+        padding: 70px 5%;
+    }
+
+    .testimonial-heading h2 {
+        font-size: 32px;
+    }
+
+    .testimonial-card {
+        padding: 40px 25px;
+    }
+
+    .testimonial-card > p {
+        font-size: 16px;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+
+        font-size: 18px;
+    }
+
+    .prev-btn {
+        left: 5px;
+    }
+
+    .next-btn {
+        right: 5px;
+    }
+
+}
+#contact {
+  padding: 60px 40px;
+  background-color: #222;
+  color: #fff;
+}
+#contact h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#contact > p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #bbb;
+  font-size: 15px;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #ddd;
+}.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #555;
+  border-radius: 6px;
+  background-color: #333;
+  color: #fff;
+  font-size: 15px;
+  font-family: 'Georgia', serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4d3825;
+  outline: none;
+  background-color: #3a3a3a;
+}button[type='submit'] {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background-color: #59422e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button[type='submit']:hover {
+  background-color: #53463c;
+}
+
+
 /*MAPLE LEAF KITCHEN MENU DESIGN*/
 /* Food Cards */
 /* Header */
@@ -212,10 +636,5 @@ food-info img{
 .add-menu-item button:hover{
     background:#3e2723;
 }
-.footer{
-    background:#7a2e2e;
-    color:#fff8f0;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
-}
+
+
