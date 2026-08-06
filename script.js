@@ -67,37 +67,38 @@ const cartItems = document.getElementById("cartItems");
 const cartTotal = document.getElementById("cartTotal");
 
 let cart = [];
+// Corrected Re usable cart function
+function addFoodToCart(button) {
+
+    const foodCard = button.closest(".food-info");
+
+    const foodName = foodCard.querySelector("h3").textContent;
+
+    const foodPrice = Number(
+        foodCard.querySelector(".price").textContent.replace("KSh ", "")
+    );
+
+    const existingFood = cart.find(function (food) {
+        return food.name === foodName;
+    });
+
+    if (existingFood) {
+        existingFood.quantity++;
+    } else {
+        cart.push({
+            name: foodName,
+            price: foodPrice,
+            quantity: 1
+        });
+    }
+
+    updateCart();
+}
 addToCartButtons.forEach(function (button) {
 
     button.addEventListener("click", function () {
 
-        const foodCard = button.closest(".food-info");
-
-        const foodName = foodCard.querySelector("h3").textContent;
-
-        const foodPrice = Number(
-            foodCard.querySelector(".price").textContent.replace("KSh ", "")
-        );
-
-        // Check if food is already in the cart
-        const existingFood = cart.find(function (food) {
-            return food.name === foodName;
-        });
-
-        if (existingFood) {
-            existingFood.quantity++;
-        } else {
-
-            const food = {
-                name: foodName,
-                price: foodPrice,
-                quantity: 1
-            };
-
-            cart.push(food);
-        }
-
-        updateCart();
+        addFoodToCart(button);
 
     });
 
@@ -193,12 +194,19 @@ if (savedMenuItems) {
             <p class="price">KSh ${food.price}</p>
             <button class="add-to-cart">Add to Cart</button>
         `;
-
+// updated code on new added items for Cart 
         savedMenuItems.appendChild(newFood);
+
+const newButton = newFood.querySelector(".add-to-cart");
+
+newButton.addEventListener("click", function () {
+    addFoodToCart(newButton);
+});
 
     });
 
 }
+
 // contact page
 const contactForm = document.querySelector(".contact-form");
 if (contactForm) {
