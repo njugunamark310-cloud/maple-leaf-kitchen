@@ -555,7 +555,7 @@ nav a:hover{
     display: block;
     margin: 20px auto;
 
-    width: 1900px;
+    width: 900px;
     height: 240px;
 
     object-fit: cover;
@@ -601,12 +601,14 @@ nav a:hover{
     box-shadow: 0 12px 24px rgba(0,0,0,0.18);
 }
 /*food changes*/
-food-info img{
-    width:100%;
-    height:520px;
-    object-fit:cover;
-    border-radius:12px;
-    border:3px solid #d4a574;
+.food-info img {
+    width: 220px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #d4a574;
+    display: block;
+    margin: 15px auto;
 }
 .food-info h3{
     color:#7a2e2e;
@@ -629,7 +631,7 @@ food-info img{
 .price{
     color:#7a2e2e;
     font-size:22px;
-    font-weight:bold;
+    font-weight:bold;   
 }
 .cart-section{
     background:white;
@@ -706,6 +708,59 @@ food-info img{
 /*=======================================
    ABOUT PAGE
 ======================================== */
+
+
+
+
+
+
+
+/* Reset & base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  color: #3e2723;
+  background-color: #fff8f0;
+}
+
+/* Header & nav */
+header {
+  background-color: #7a2e2e;
+  color: #fff8f0;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-family: Georgia, serif;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #f2d9a1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
 /* Main content */
 main {
   max-width: 900px;
