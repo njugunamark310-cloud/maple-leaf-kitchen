@@ -1,3 +1,64 @@
+/*=======================================
+   HOME PAGE
+======================================== */
+
+/* Home intro */
+#home p {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #3e2723;
+}
+
+/* Menu button */
+.menu.button {
+  display: inline-block;
+  background-color: #d4a574;
+  color: #3e2723;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.menu.button:hover {
+  background-color: #7a2e2e;
+  color: #fff8f0;
+}
+
+/* Reservation section */
+.reservation-section {
+  background-color: #f2d9a1;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.reservation-section h2 {
+  color: #7a2e2e;
+  margin-bottom: 15px;
+}
+
+.reservation-section p {
+  margin-bottom: 20px;
+  color: #3e2723;
+}
+
+.reservation-btn {
+  display: inline-block;
+  background-color: #7a2e2e;
+  color: #fff8f0;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.reservation-btn:hover {
+  background-color: #3e2723;
+  color: #f2d9a1;
+}
 
 /* ========================================
    TESTIMONIALS
