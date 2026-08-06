@@ -13,7 +13,7 @@
  .menu.button {
   display: inline-block;
   background-color: #7a2e2e;   /* same as slider base */
-  color: #fff8f0;              /* white text */
+  color: #ffffff;              /* white text */
   padding: 12px 24px;
   border: none;
   border-radius: 6px;
@@ -25,14 +25,14 @@
 
 .menu.button:hover {
   background-color: #d4a574;   /* gold-brown hover */
-  color: #d4a574;
+  color: #ffffff;
   transform: scale(1.05);
 }
 
 
 /* Reservation section */
 .reservation-section {
-  background-color: #7a2e2e;   /* same as slider base */
+  background-color: #fff8f0;   /* same as slider base */
   padding: 30px;
   text-align: center;
   border-radius: 8px;
@@ -51,7 +51,7 @@
  .reservation-btn {
   display: inline-block;
   background-color: #7a2e2e;   /* same as slider base */
-  color: #fff8f0;              /* white text */
+  color: #ffffff;              /* white text */
   padding: 12px 28px;
   border: none;
   border-radius: 6px;
@@ -63,7 +63,7 @@
 
 .reservation-btn:hover {
   background-color: #d4a574;   /* gold-brown hover */
-  color: #d4a574;
+  color: #ffffff;
   transform: scale(1.05);
 }
 
