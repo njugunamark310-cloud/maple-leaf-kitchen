@@ -30,29 +30,31 @@
   transform: scale(1.05);
 }
 
-/* Reservation section */
+ /* Reservation section */
 .reservation-section {
-  background-color: #f2d9a1; /* soft gold background, consistent accent */
+  background-color: #fff8f0; /* match testimonials container */
   padding: 30px;
   text-align: center;
   border-radius: 8px;
+  color: #3e2723; /* same text color as testimonials */
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 .reservation-section h2 {
   color: #7a2e2e; /* maroon heading, same as testimonial h2 */
   margin-bottom: 15px;
-  font-family: Georgia, serif; /* harmonized heading font */
+  font-family: Georgia, serif;
 }
 
 .reservation-section p {
   margin-bottom: 20px;
-  color: #3e2723; /* same body text color */
+  color: #3e2723;
   font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 .reservation-btn {
   display: inline-block;
-  background-color: #7a2e2e;   /* same as testimonial slider base */
+  background-color: #7a2e2e;   /* maroon base, same as testimonial buttons */
   color: #fff8f0;              /* cream text */
   padding: 12px 28px;
   border: none;
@@ -68,6 +70,7 @@
   color: #3e2723;              /* dark text for contrast */
   transform: scale(1.05);
 }
+
 
 
 /* ========================================
