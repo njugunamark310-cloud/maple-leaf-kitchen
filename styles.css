@@ -1,4 +1,4 @@
-/*=======================================
+ /*=======================================
    HOME PAGE
 ======================================== */
 
@@ -6,14 +6,15 @@
 #home p {
   margin-top: 15px;
   font-size: 18px;
-  color: #3e2723;
+  color: #3e2723; /* matches testimonial text color */
+  font-family: 'Segoe UI', Arial, sans-serif; /* harmonized font */
 }
 
 /* Menu button */
- .menu.button {
+.menu.button {
   display: inline-block;
-  background-color: #263b2b;   /* same as slider base */
-  color: #ffffff;              /* white text */
+  background-color: #7a2e2e;   /* same as testimonial slider base */
+  color: #fff8f0;              /* cream text to match testimonial buttons */
   padding: 12px 24px;
   border: none;
   border-radius: 6px;
@@ -24,34 +25,35 @@
 }
 
 .menu.button:hover {
-  background-color: #8b6b32;   /* gold-brown hover */
-  color: #ffffff;
+  background-color: #d4a574;   /* gold hover, same as testimonial hover */
+  color: #3e2723;              /* dark text for contrast */
   transform: scale(1.05);
 }
 
-
 /* Reservation section */
 .reservation-section {
-  background-color: #f2d9a1;
+  background-color: #f2d9a1; /* soft gold background, consistent accent */
   padding: 30px;
   text-align: center;
   border-radius: 8px;
 }
 
 .reservation-section h2 {
-  color: #7a2e2e;
+  color: #7a2e2e; /* maroon heading, same as testimonial h2 */
   margin-bottom: 15px;
+  font-family: Georgia, serif; /* harmonized heading font */
 }
 
 .reservation-section p {
   margin-bottom: 20px;
-  color: #3e2723;
+  color: #3e2723; /* same body text color */
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
- .reservation-btn {
+.reservation-btn {
   display: inline-block;
-  background-color: #263b2b;   /* same as slider base */
-  color: #ffffff;              /* white text */
+  background-color: #7a2e2e;   /* same as testimonial slider base */
+  color: #fff8f0;              /* cream text */
   padding: 12px 28px;
   border: none;
   border-radius: 6px;
@@ -62,13 +64,13 @@
 }
 
 .reservation-btn:hover {
-  background-color: #8b6b32;   /* gold-brown hover */
-  color: #ffffff;
+  background-color: #d4a574;   /* gold hover, same as testimonial hover */
+  color: #3e2723;              /* dark text for contrast */
   transform: scale(1.05);
 }
 
 
- /* ========================================
+/* ========================================
    TESTIMONIALS
 ======================================== */
 
@@ -81,11 +83,7 @@
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-
-/* ========================================
-   HEADING
-======================================== */
-
+/* Heading */
 .testimonial-heading span {
     color: #d4a574;
     font-size: 14px;
@@ -106,11 +104,7 @@
     margin: 0 auto 45px;
 }
 
-
-/* ========================================
-   SLIDER
-======================================== */
-
+/* Slider */
 .testimonial-slider-container {
     position: relative;
     max-width: 900px;
@@ -128,206 +122,120 @@
     flex: 0 0 100%;
     width: 100%;
     box-sizing: border-box;
-
     background: #ffffff;
-
     padding: 50px 45px;
-
     border-radius: 20px;
-
     box-shadow: 0 10px 35px rgba(62, 39, 35, 0.12);
 }
 
-
-/* ========================================
-   QUOTE ICON
-======================================== */
-
+/* Quote icon */
 .quote-icon {
     font-size: 70px;
     line-height: 40px;
-
     color: #d4a574;
-
     font-family: Georgia, serif;
 }
 
-
-/* ========================================
-   STAR RATING
-======================================== */
-
+/* Stars */
 .stars {
     color: #d4a574;
-
     font-size: 25px;
-
     letter-spacing: 4px;
-
     margin: 15px 0 25px;
 }
 
-
-/* ========================================
-   TESTIMONIAL TEXT
-======================================== */
-
+/* Testimonial text */
 .testimonial-card > p {
     font-size: 18px;
-
     line-height: 1.8;
-
     color: #3e2723;
-
     max-width: 750px;
-
     margin: 0 auto;
 }
 
-
-/* ========================================
-   CUSTOMER
-======================================== */
-
+/* Customer */
 .customer {
     margin-top: 30px;
-
     text-align: center;
 }
 
 .customer h3 {
     margin: 0 0 5px;
-
     color: #7a2e2e;
-
     font-size: 20px;
-
     font-weight: 700;
-
     font-family: Georgia, serif;
 }
 
 .customer span {
     color: #d4a574;
-
     font-size: 14px;
-
     font-weight: 600;
-
     letter-spacing: 1px;
 }
 
-
-/* ========================================
-   PREVIOUS / NEXT BUTTONS
-======================================== */
-
+/* Previous / Next buttons */
 .slider-btn {
     position: absolute;
-
     top: 50%;
-
     transform: translateY(-50%);
-
     width: 50px;
     height: 50px;
-
     border: none;
-
     border-radius: 50%;
-
     background: #7a2e2e;
-
     color: #fff8f0;
-
     font-size: 24px;
-
     cursor: pointer;
-
     z-index: 10;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
-    transition: background 0.3s ease,
-                transform 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
-
-
-/* Hover */
 
 .slider-btn:hover {
     background: #d4a574;
-
+    color: #3e2723;
     transform: translateY(-50%) scale(1.1);
 }
 
-
 /* Previous */
-
 .prev-btn {
     left: 15px;
 }
 
-
 /* Next */
-
 .next-btn {
     right: 15px;
 }
 
-
-/* ========================================
-   SLIDER DOTS
-======================================== */
-
+/* Slider dots */
 .slider-dots {
     display: flex;
-
     justify-content: center;
-
     gap: 10px;
-
     margin-top: 30px;
 }
 
 .dot {
     width: 11px;
     height: 11px;
-
     border: none;
-
     border-radius: 50%;
-
     background: #d4a574;
-
     cursor: pointer;
-
-    transition: width 0.3s ease,
-                background 0.3s ease;
+    transition: width 0.3s ease, background 0.3s ease;
 }
-
-
-/* Active dot */
 
 .dot.active {
     width: 30px;
-
     border-radius: 10px;
-
     background: #7a2e2e;
 }
 
-
-/* ========================================
-   MOBILE
-======================================== */
-
+/* Mobile */
 @media screen and (max-width: 768px) {
-
     .testimonials {
         padding: 70px 5%;
     }
@@ -347,7 +255,6 @@
     .slider-btn {
         width: 40px;
         height: 40px;
-
         font-size: 18px;
     }
 
@@ -358,5 +265,4 @@
     .next-btn {
         right: 5px;
     }
-
 }
