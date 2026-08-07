@@ -48,6 +48,7 @@ git clone https://github.com/njugunamark310-cloud/maple-leaf-kitchen.git
 3. Open `homepage.html` or `index.html` in your browser.
 
 ---
+live website https://njugunamark310-cloud.github.io/maple-leaf-kitchen/about.html
 
 ## 👥 Contributors
 
