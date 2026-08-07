@@ -69,7 +69,3 @@ live website https://njugunamark310-cloud.github.io/maple-leaf-kitchen/about.htm
 - Pay pal support and full Master Card support
 
 
-
-## 📄 License
-
-This project is under MIT licence
