@@ -3,6 +3,8 @@
 ## Project Description
 
 Maple Leaf Kitchen is a restaurant website that allows customers to browse meals, add items to a shopping cart, and contact the restaurant. The website provides an interactive experience using HTML, CSS, and JavaScript.
+This is a website designed to simplify and improve restaurant experience and improve the experience of customers.
+
 
 
 ## Problem Statement
@@ -63,6 +65,7 @@ git clone https://github.com/njugunamark310-cloud/maple-leaf-kitchen.git
 - Food search and filtering
 - Order history
 - Mpesa support
+- Pay pal support and full Master Card support
 
 
 
